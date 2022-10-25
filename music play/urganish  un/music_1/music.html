@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .MUSIC{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        background: #0b132d;
+    }
+    h1{
+        color: white;
+        box-shadow: 0 0 20px;
+        width: 200px;
+        height: 35px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        border-radius: 10px;
+    }
+    button{
+        border: 0;
+        color: white;
+        width: 100px;
+        height: 35px;
+        background: #1ca7a7;
+        font-size: 20px;
+        border-radius: 10px;
+        box-shadow:  0 0 20px ;
+    }
+</style>
+<body>
+<div class="MUSIC">
+    <h1>Play music</h1>
+    <button>Play</button>
+    <audio hidden controls src="../music_2/music/doston-ergashev-kozmunchogim_(uzhits.net).mp3"></audio>
+</div>
+<script>
+    let button = document.querySelector('button');
+    let audio = document.querySelector('audio');
+    console.log(button)
+    button.addEventListener("click", ()=>{
+       if (audio.pause){
+           audio.play()
+       }else{
+           audio.pause()
+       }
+
+    })
+
+</script>
+</body>
+</html>
+

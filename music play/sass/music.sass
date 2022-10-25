@@ -1,0 +1,140 @@
+.aoudio
+  background: url("../galeriya/91Pb7qVjrGL._SL1500_.jpg")
+  background-size: cover
+  height: 100vh
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+.music
+  width: 630px
+  height: 400px
+  display: flex
+  align-items: center
+  flex-direction: column
+  overflow: auto
+  position: relative
+  &_player
+    display: flex
+    justify-content: space-around
+    flex-direction: column
+    align-items: center
+    width: 500px
+    height: 400px
+    &_a
+      display: flex
+      justify-content: space-around
+      align-items: center
+      width: 600px
+      height: 50px
+      background-color: rgba(82, 140, 224, 0.41)
+      border-radius: 8px
+      &:hover
+        box-shadow: 0 0 20px #fcfcfd
+      &_1
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 50px
+        height: 50px
+        img:nth-child(1)
+          width: 40px
+          height: 40px
+        img:nth-child(2)
+          width: 20px
+          height: 20px
+          position: absolute
+
+      h1
+        color: rgba(246, 243, 243, 0.86)
+        font-size: 15px
+        width: 300px
+      &_2
+        display: flex
+        justify-content: space-around
+        align-items: center
+        width: 100px
+        height: 80px
+        img
+          width: 30px
+          height: 30px
+.player
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 630px
+  height: 150px
+  flex-direction: column
+
+  &_a
+    display: flex
+    align-items: center
+    justify-content: space-around
+    width: 630px
+    height: 120px
+    background-color: rgba(0, 255, 255, 0.42)
+    border-radius: 13px 13px  0 0
+    img
+      width: 100px
+      height: 100px
+      border-radius: 50%
+      animation-iteration-count: infinite
+      animation-name: rotate
+      animation-duration: 3s
+      animation-timing-function: linear
+      animation-play-state: paused
+    .active_rotate
+      animation-play-state: running
+    @keyframes rotate
+      from
+        transform: rotate(0deg)
+      to
+        transform: rotate(360deg)
+    &_1
+      display: flex
+      align-items: center
+      justify-content: center
+      flex-direction: column
+      width: 180px
+      height: 120px
+      &_a
+        display: flex
+        justify-content: space-around
+        align-items: center
+        width: 200px
+        height: 100px
+        img
+          width: 60px
+          height: 60px
+      h1
+        color: black
+        font-size: small
+    &_2
+      display: flex
+      justify-content: space-around
+      align-items: center
+      width: 130px
+      height: 140px
+      img
+        width: 60px
+        height: 60px
+  &_b
+    //display: flex
+    //justify-content: center
+    //align-items: center
+    //flex-direction: column
+    width: 630px
+    height: 6px
+    background-color: white
+    &_1
+       background-color: midnightblue
+       width: 0
+       height: 5px
+.active
+  opacity: 1
+  transform: translateX(0)
+
+//@media (max-width: 1200px)
+
+  // 991 768 576
